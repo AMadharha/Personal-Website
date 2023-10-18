@@ -3,21 +3,24 @@ main {
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;   
-    padding-top: 50px;
-    gap: 30px;
-}
-main p {
-    font-family: 'Archivo', sans-serif;
-    color: #121212;
-    margin: 0;
+    align-items: center;
 }
 main a {
     text-decoration: none;
 }
 
 /* PROJECT BUTTON */
+.project-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.project-container p {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+}
 .project-button {
     background-color: #9381ff;
     width: 950px;
