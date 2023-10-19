@@ -32,14 +32,14 @@ main a {
     margin-left: 20px;
 }
 .blog-header h1 {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 24px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
     color: #FFD8BE;
     margin: 0;
 }
 .blog-header h2 {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
     color: #FFEEDD;
     margin: 0;
 }

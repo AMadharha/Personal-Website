@@ -40,12 +40,12 @@ main a {
     border-radius: 10px;
 }
 .project-information {
-    margin-top: 10px;
+    margin-top: 18px;
     margin-left: 10px;
 }
 .project-information h1{
-    font-family: 'Coolvetica', sans-serif; 
-    font-size: 32px;
+    font-family: 'Archivo', sans-serif; 
+    font-size: 24px;
     color: #F8F7FF;
     margin: 0;
 }
