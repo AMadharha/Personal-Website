@@ -1,0 +1,76 @@
+/* MAIN */
+main {
+    grid-column: 2;  
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTON */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px;
+}
+.button-container p {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    margin: 0;
+}
+.button-container h1 {
+    font-family: 'Coolvetica', sans-serif;
+    color: #121212;
+    margin-bottom: 0;
+}
+.button-container h2 {
+    font-family: 'Coolvetica', sans-serif;
+    color: #121212;
+    margin-bottom: 0;
+}
+.button-container hr {
+    width: 100%; 
+    height: auto; 
+    border: none; 
+    border-top: 3px solid #FFD8BE;  
+}
+.work-term-report-button {
+    width: 950px;
+    height: 40px;
+    color: #9381ff; 
+    border: 3px solid #9381ff; 
+    background-color: transparent;
+    border-radius: 0; 
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hidden {
+    display: none !important;
+}
+#wt1, #wt2 {
+    width: 950px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#ats-logo {
+    width: 150px;
+    height: auto;  
+    align-self: center;
+}
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.image-container img {
+    width: auto;
+    height: 75px;
+}
