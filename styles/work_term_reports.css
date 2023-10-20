@@ -48,6 +48,9 @@ main {
     justify-content: center;
     cursor: pointer;
 }
+.work-term-report-button:hover {
+    background-color: #FFEEDD; /* Color changes to FFEEDD on hover */
+}
 .hidden {
     display: none !important;
 }
