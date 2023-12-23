@@ -49,7 +49,7 @@ main {
     cursor: pointer;
 }
 .work-term-report-button:hover {
-    background-color: #FFEEDD; /* Color changes to FFEEDD on hover */
+    background-color: #C1F2B0; /* Color changes to FFEEDD on hover */
 }
 .hidden {
     display: none !important;
