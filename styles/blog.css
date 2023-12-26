@@ -9,7 +9,7 @@ main {
 main hr {
     width: 85%;
     border: none; 
-    border-top: 3px solid #FFD8BE; 
+    border-top: 3px solid #a3e78c; 
 }
 main a {
     text-decoration: none;
@@ -34,13 +34,13 @@ main a {
 .blog-header h1 {
     font-family: 'Archivo', sans-serif;
     font-size: 20px;
-    color: #FFD8BE;
+    color: #a3e78c;
     margin: 0;
 }
 .blog-header h2 {
     font-family: 'Archivo', sans-serif;
     font-size: 14px;
-    color: #FFEEDD;
+    color: #cbeac1;
     margin: 0;
 }
 .blog-button p {
