@@ -1,20 +1,11 @@
-/* MAIN */
-main {
-    grid-column: 2;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-}
-main p {
-    font-family: 'Archivo', sans-serif;
-    color: #121212;
-}
-
 /* PROFILE CARD */
 .profile-card {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    height: calc(100vh - 120px); 
 }
 .profile-info h1 {
     font-family: 'Coolvetica', sans-serif; 
@@ -25,7 +16,7 @@ main p {
 }
 .profile-info h2 {
     font-family: 'Coolvetica', sans-serif; 
-    color: #a3e78c;
+    color: #6fe04a;
     font-size: 52px;
     margin: 0;
     padding: 0;
@@ -33,4 +24,5 @@ main p {
 .profile-info p {
     font-family: 'Archivo', sans-serif;
     color: #121212;
+    font-size: 20px;
 }
