@@ -24,7 +24,7 @@ body, html {
 
 /* HEADER */
 nav {
-    height: 100px; 
+    height: 110px; 
     background-color: #F8F7FF; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
     padding-top: 20px;
@@ -36,6 +36,9 @@ nav {
     width: 90%;
     justify-content: space-between;
 }
+.media-item {
+    text-align: center;
+}
 .media-item img {
     width: 75px;
     height: 75px;
@@ -44,4 +47,14 @@ nav {
 }
 .media-item img:hover {
     transform: scale(1.05);
+}
+nav a {
+    text-decoration: none;
+}
+.media-text {
+    display: block; 
+    font-family: 'Archivo', sans-serif; 
+    font-size: 17px; 
+    color: #121212; 
+    text-decoration: none;
 }
