@@ -1,0 +1,85 @@
+:root {
+    --purple: #9381ff; 
+    --green: #6fe04a; 
+    --lightgreen: #d3fac4; 
+    --black: #121212; 
+    --grey: #474646; 
+    --white: #F8F7FF;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./fonts/coolvetica.woff2') format('woff2'),
+         url('./fonts/coolvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/archivo.woff2') format('woff2'),
+         url('./fonts/archivo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #F8F7FF;
+}
+
+/* NAV BAR */
+nav {
+    height: 70px; 
+    background-color: #F8F7FF; 
+    box-shadow: 0px 4px 10px rgba(75, 75, 75, 0.3); 
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 11px;
+}
+.media-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.media-item {
+    text-align: center;
+}
+.media-item img {
+    width: 50px;
+    height: auto;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+.media-item img:hover {
+    transform: scale(1.05);
+}
+nav a {
+    text-decoration: none;
+}
+.media-text {
+    display: block; 
+    font-family: 'Archivo', sans-serif; 
+    font-size: 17px; 
+    color: #121212; 
+    text-decoration: none;
+}
+
+/* TITLE STYLES */
+.title {
+    width: 100%;
+    height: 100px;
+    background-color: var(--lightgreen);
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+}
+.title h1 {
+    margin: 0px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+}
