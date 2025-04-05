@@ -1,53 +1,90 @@
+:root {
+    --purple: #9381ff; 
+    --green: #6fe04a; 
+    --lightgreen: #d3fac4; 
+    --black: #121212; 
+    --grey: #474646; 
+    --white: #F8F7FF;
+}
+
+p {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    text-align: center;
+}
+
 /* PROJECT BUTTON */
 .project-container {
-    padding-top: 40px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-.project-container a {
+.project-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
     text-decoration: none;
+    cursor: pointer;
 }
-.project-container p {
-    font-family: 'Archivo', sans-serif;
-    color: #121212;
+.project-item {
+    width: 1000px;
+    height: 125px;
+    background-color: var(--purple);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-.project-button {
-    background-color: #9381ff;
-    width: 950px;
-    height: 115px;
-    border-radius: 10px;
-    display: flex;
-    transition: transform 0.3s ease;
-}
-.project-button:hover {
-    transform: scale(1.05);
-}
-.status-indicator {
-    width: 60px;
-    height: 95px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
+.project-item:hover {
+    transform: scale(1.025);
 }
 .project-information {
-    margin-top: 18px;
-    margin-left: 10px;
+    margin: 20px 20px 20px 20px; /* top, right, bottom, left */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
-.project-information h1{
-    font-family: 'Archivo', sans-serif; 
-    font-size: 24px;
-    color: #F8F7FF;
-    margin: 0;
+.project-information img {
+    width: 80px;
+    height: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
 }
-.project-details {
-    margin-top: 10px;
+.project-information img:hover {
+    transform: scale(1.1);
 }
-.project-details p {
+.status-indicator {
+    height: 80px;
+    width: 50px;
+    border-radius: 20px;
+}
+.project-description {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+}
+.project-description h3 {
+    margin: 0px;
+    color: var(--white);
     font-family: 'Archivo', sans-serif;
-    color: #F8F7FF;
-    margin: 0;
+}
+.project-description p {
+    margin: 0px;
+    text-align: left;
+    color: var(--white);
+}
+.github-link {
+    position: relative;
+    z-index: 5;
 }
 #green {
     background-color: #B6EDB5;
