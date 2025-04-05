@@ -6,6 +6,13 @@
     --grey: #474646; 
 }
 
+p {
+    font-family: 'Archivo', sans-serif;
+    color: #121212;
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* TIMELINE STYLES */
 .timeline {
     margin-top: 50px;
@@ -30,8 +37,8 @@
 }
 .timeline-content {
     font-family: 'Archivo', sans-serif;
-    padding: 20px;
     position: relative;
+    padding: 10px;
     z-index: 1;
     width: 300px;
     text-align: center;
