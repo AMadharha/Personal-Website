@@ -1,4 +1,79 @@
-/* BUTTON */
+:root {
+    --purple: #9381ff; 
+    --green: #6fe04a; 
+    --lightgreen: #d3fac4; 
+    --black: #121212; 
+    --grey: #474646; 
+}
+
+/* TIMELINE STYLES */
+.timeline {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 100%;
+    background-color: var(--purple);
+    z-index: 0;
+}
+.timeline-content {
+    font-family: 'Archivo', sans-serif;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.timeline-content:hover {
+    background-color: var(--lightgreen); /* Set the background color to green */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transform: scale(1.05); /* Slightly scale up to give a "clickable" effect */
+}
+.timeline-content img {
+    width: 150px;
+    height: auto;  
+}
+.timeline-item:nth-child(odd) .timeline-content {
+    left: -220px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+    left: 220px;
+}
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.timeline-item p {
+    font-size: 1em;
+    color: var(--grey);
+}
+.timeline-item .timeline-content p {
+    display: none;
+}
+
+.timeline-item .timeline-content p.show {
+    display: block;
+}
+
+/* WORK TERM REPORT STYLES */
 .button-container {
     display: flex;
     flex-direction: column;

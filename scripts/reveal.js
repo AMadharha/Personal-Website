@@ -12,3 +12,12 @@ toggleButtons.forEach(button => {
         }
     });
 });
+
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+timelineItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const details = item.querySelector('.timeline-content p');
+    details.classList.toggle('show'); // Toggle the visibility of details
+  });
+});
