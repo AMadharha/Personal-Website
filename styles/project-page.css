@@ -75,11 +75,36 @@ nav a {
     height: 100px;
     background-color: var(--lightgreen);
     display: flex;
-    justify-content: center; /* horizontal centering */
-    align-items: center;     /* vertical centering */
+    justify-content: center;
+    align-items: center;     
 }
 .title h1 {
     margin: 0px;
     font-family: 'Archivo', sans-serif;
     font-size: 25px;
+}
+
+/* PROJECT DESC STYLES */
+.project-desc {
+    font-family: 'Archivo', sans-serif;
+    width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+blockquote {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    font-style: italic; 
+}
+
+/* POWER BI REPORT STYLES */
+.powerbi-container {
+    display: flex;
+    justify-content: center;
+}
+
+.powerbi-container iframe {
+    border: 2px solid var(--black);
 }
