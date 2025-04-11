@@ -32,8 +32,8 @@ p {
     cursor: pointer;
 }
 .project-item {
-    width: 1000px;
-    height: 125px;
+    width: 50%;
+    height: 50%;
     background-color: var(--purple);
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -63,7 +63,7 @@ p {
 }
 .status-indicator {
     height: 80px;
-    width: 50px;
+    width: 10%;
     border-radius: 20px;
 }
 .project-description {
@@ -94,4 +94,18 @@ p {
 }
 #red {
     background-color: #EA9595;
+}
+
+/* ======= MOBILE RESPONSIVENESS ======= */
+@media (max-width: 768px) {
+    .project-description p {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    html {
+        overflow-x: hidden;
+    }
 }

@@ -26,3 +26,31 @@
     color: #121212;
     font-size: 20px;
 }
+
+/* ======= MOBILE RESPONSIVENESS ======= */
+@media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column;
+      margin: 20px;
+      height: auto;
+      text-align: center;
+    }
+  
+    .profile-card img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .profile-info h1 {
+      font-size: 36px;
+    }
+  
+    .profile-info h2 {
+      font-size: 28px;
+    }
+  
+    .profile-info p {
+      font-size: 16px;
+    }
+}

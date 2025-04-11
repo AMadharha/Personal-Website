@@ -3,7 +3,8 @@
     --green: #6fe04a; 
     --lightgreen: #d3fac4; 
     --black: #121212; 
-    --grey: #474646; 
+    --grey: #474646;
+    --white: #F8F7FF; 
 }
 
 p {
@@ -12,6 +13,7 @@ p {
     margin-top: 50px;
     text-align: center;
 }
+
 
 /* TIMELINE STYLES */
 .timeline {
@@ -55,7 +57,7 @@ p {
     transform: scale(1.05); /* Slightly scale up to give a "clickable" effect */
 }
 .timeline-content img {
-    width: 150px;
+    max-width: 150px;
     height: auto;  
 }
 .timeline-item:nth-child(odd) .timeline-content {
@@ -156,4 +158,60 @@ p {
 .image-container img {
     width: auto;
     height: 75px;
+}
+
+
+/* ======= MOBILE RESPONSIVENESS ======= */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        transform: none;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin: 10px 0;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .image-container img {
+        width: 80px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
+
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 100%;
+        background-color: var(--white);
+        z-index: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    html {
+        overflow-x: hidden;
+    }
 }

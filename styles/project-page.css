@@ -91,7 +91,7 @@ nav a {
 /* PROJECT DESC STYLES */
 .project-desc {
     font-family: 'Archivo', sans-serif;
-    width: 1300px;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 100px;
 }
@@ -111,4 +111,32 @@ blockquote {
 
 .powerbi-container iframe {
     border: 2px solid var(--black);
+}
+
+@media (max-width: 768px) {
+    nav {
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .media-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .media-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .media-text {
+      font-size: 14px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    html {
+        overflow-x: hidden;
+    }
 }
