@@ -67,14 +67,14 @@
             <li><strong>Selenium:</strong> For scraping real-time prices from Google Flights.</li>
             <li><strong>PostgreSQL:</strong> Database for storing flight data.</li>
             <li><strong>Power BI:</strong> For building an interactive visualization.</li>
-            <li><strong>Linux:</strong> Server to host the PostgreSQL database and uses cron to automate daily data collection.</li>
+            <li><strong>Linux:</strong> Server to host the PostgreSQL database and uses <code>cron</code> to automate daily data collection.</li>
         </ul>
         <h2>Data Pipeline</h2>
         <ol>
             <li><strong>Scraping:</strong> Selenium bot navigates to Google Flights and retrieves the current lowest price for 4 specific routes with set departure and arrival dates.</li>
             <li><strong>Cleaning:</strong> Python parses and processes the data, converting it into a consistent format and ensuring datatypes are correct.</li>
             <li><strong>Storage:</strong> Data is uploaded to a PostgreSQL database, appending new records daily.</li>
-            <li><strong>Automation:</strong> The entire script runs automatically every day at 5 AM.</li>
+            <li><strong>Automation:</strong> The entire script runs automatically every day at 5 AM using <code>cron</code>.</li>
         </ol>
         <h2>Visualization</h2>
         <p>

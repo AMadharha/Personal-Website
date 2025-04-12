@@ -28,13 +28,23 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%; 
-    background-color: #F8F7FF;
+    background-color: var(--white);
 }
+
+code {
+    font-family: monospace;
+    background-color: var(--white);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: var(--black);
+    background-color: var(--lightgreen);
+  }
 
 /* NAV BAR */
 nav {
     height: 70px; 
-    background-color: #F8F7FF; 
+    background-color: var(--white); 
     box-shadow: 0px 4px 10px rgba(75, 75, 75, 0.3); 
     padding-top: 20px;
     display: flex;
