@@ -108,4 +108,11 @@ p {
     html {
         overflow-x: hidden;
     }
+    .project-information img {
+        width: 50px;
+        height: auto;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border-radius: 8px;
+    }
 }
