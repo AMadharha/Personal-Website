@@ -89,6 +89,12 @@ p {
     margin-top: 40px;
     align-items: center;
     gap: 20px;
+    width:1000px;
+    margin-left: 480px;
+}
+li {
+    font-family: 'Archivo', sans-serif;
+    color: #121212; 
 }
 .button-container p {
     font-family: 'Archivo', sans-serif;
