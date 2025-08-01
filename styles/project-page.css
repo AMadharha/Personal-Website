@@ -99,6 +99,9 @@ nav a {
 }
 
 /* PROJECT DESC STYLES */
+#status-message {
+    color: #EA9595;
+}
 .project-desc {
     font-family: 'Archivo', sans-serif;
     width: 70%;
